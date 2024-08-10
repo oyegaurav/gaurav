@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESUME</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="/index.js">
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <b>Gaurav</b>
+            <p>Web developer</p>
+        </div>
+        <button class="btns"><a href="http://127.0.0.1:5500/index.html" class="btns">About me</a></button>
+        <button class="btns" >Resume</button>
+        <button class="btns">Projects</button>
+        <button class="btns"><a href="http://127.0.0.1:5500/contct.html" class="btns">Contact</a></button>
+    </header>
+    <!-- RESUME code starts here-->
+    <div class="bg-color">
+        <div class="bob">
+            <h3>RESUME</h3>
+            <h5>Education</h5>
+            <button class="btns0" onclick=""><a href="/GAURAVCV.pdf" class="pdf">DOWNLOAD CV </a></button>
+            <div class="whitebox1">
+                <div class="education">
+                    <b>July 2022-2025</b>
+                </div>
+                <div class="class">
+                    <span class="tr1">IGNOU</span>
+                    <span class="tr2">BCA (Bachelor of Computer Applications)</span>
+                    <span class="tr3">Delhi</span>
+                    <div class="about">Software Developer/Engineer: Designing, coding, and maintaining software
+                        applications.
+                        Web Developer: Creating and maintaining websites and web applications.
+                        Database Administrator: Managing and organizing data in databases.
+                        System Analyst: Analyzing and designing IT solutions for business problems.</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="whitebox2">
+            <div class="profesional">
+                <h4 class="h11">Professional Skills</h4>
+                <ul class="ul1">
+                    <li class="li1">HTML/CSS</li>
+                    <li class="li2">JavaScript</li>
+                    <li class="li3">Backend Development</li>
+                    <li class="li4">Web Hosting & Cloud Services</li>
+                </ul>
+                <div class="language">
+                    <h4>Language</h4>
+                    <li class="lang">English</li>
+                    <li class="lang1">Hindi</li>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- Footer strats here-->
+    <footer>
+        <div class="f1">
+            &copy; by Gaurav. The web developer
+        </div>
+        <ul class="futu">
+            <li>Call</li>
+            <ol> 9821478273</ol>
+            <li>E mail </li>
+            <ol>dhruv.68100@gmail.com</ol>
+            <li class="follow">Follow <ol>
+                    <img class="icon0" src="assest/facebook.svg" alt="">
+                    <img class="icon0" src="assest/instagram.svg" alt="">
+                    <img class="icon0" src="assest/linkedin.svg" alt="">
+                    <img class="icon0" src="assest/whatsapp.svg" alt="">
+                </ol>
+            </li>
+        </ul>
+    </footer>
+    
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+        <script>
+            document.getElementsByClassName("btns0").addEventListener("click", function() {
+                // Create a new link element
+                var link = document.createElement("a");
+                
+                // Set the download attribute with a filename
+                link.download = "GAURAVCV.pdf";
+                
+                // Set the href to the file URL
+                link.href = "C:\Users\dhruv\OneDrive\Desktop\Gaurav BIO\Gaurav Bio\GAURAVCV.pdf";
+                
+                // Append the link to the body
+                document.body.appendChild(link);
+                
+                // Programmatically click the link to trigger the download
+                link.click();
+                
+                // Remove the link from the document
+                document.body.removeChild(link);
+            });
+        </script>
+</html>
